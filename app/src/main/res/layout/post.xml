@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layoutDescription="@xml/post_scene">
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:constraint_referenced_ids="post_number,post_name,post_date,post_id"
+        app:flow_horizontalBias="0"
+        app:flow_horizontalGap="2sp"
+        app:flow_horizontalStyle="packed"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></androidx.constraintlayout.helper.widget.Flow>
+
+    <TextView
+        android:id="@+id/post_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/post_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anonymous (ﾜｯﾁｮｲ 49aa-/aK1)"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <TextView
+        android:id="@+id/post_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2022/03/21(月) 22:34:20.55"
+        tools:layout_editor_absoluteX="209dp" />
+
+    <TextView
+        android:id="@+id/post_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID:j+oYqWFW0"
+        tools:layout_editor_absoluteX="150dp" />
+
+    <TextView
+        android:id="@+id/post_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ここに本文を入れる"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

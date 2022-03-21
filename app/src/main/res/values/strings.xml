@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyFirstApp2</string>
+    <string name="button_label">ラベルを変更</string>
+</resources>
