@@ -19,7 +19,9 @@ public class honbun extends AppCompatActivity {
         Intent intent = getIntent();
         String threadURL = intent.getStringExtra("threadURL");
         TextView textView = findViewById(R.id.testMessage);
+        threadURL = threadURL.replace("/l50","");
         textView.setText(threadURL);
+
         //以下でそのスレッドの内容を取得し、画面に反映する
         try {
             new GetHonbun(this).execute(new URL(threadURL));

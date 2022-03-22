@@ -51,8 +51,8 @@ public final class GetThreadTitles extends AsyncTask<URL, Void, Elements> {
             // Jsoupで対象URLの情報を取得する。
             Document doc = Jsoup.connect(url1).get();
             Elements elm = doc.select("[id=trad] a");
-            Element elm2 = elm.get(4);
-            String title = elm2.text();
+            //Element elm2 = elm.get(4);
+            //String title = elm2.text();
             return  elm;
 
         } catch (IOException e) {
@@ -73,7 +73,7 @@ public final class GetThreadTitles extends AsyncTask<URL, Void, Elements> {
         if(result == null)return;
         //ここにResultを使ってtitlesビューのスレタイ一覧を更新する処理を書く
         TextView tv = mainActivity.findViewById(R.id.textView);
-        tv.setText(result.get(1).toString());
+        //tv.setText(result.get(1).toString());
         ArrayList<String> titlenames = new ArrayList();
 
         int resultSize = result.size();

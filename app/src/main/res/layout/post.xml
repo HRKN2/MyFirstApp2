@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:layoutDescription="@xml/post_scene">
 
@@ -18,7 +18,7 @@
         app:flow_wrapMode="chain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></androidx.constraintlayout.helper.widget.Flow>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/post_number"
@@ -49,7 +49,7 @@
 
     <TextView
         android:id="@+id/post_message"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="ここに本文を入れる"
         android:textSize="14sp"

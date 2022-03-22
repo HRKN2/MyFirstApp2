@@ -15,6 +15,6 @@ public class Post {
         this.name = Data.select(".name").text();
         this.date = Data.select(".date").text();
         this.uid = Data.select(".uid").text();
-        this.message = Data.select(".message").text();
+        this.message = Data.select(".message").html();
     }
 }

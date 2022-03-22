@@ -2,8 +2,11 @@ package com.example.myfirstapp2;
 
 import android.app.Activity;
 import android.os.AsyncTask;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import org.jsoup.Jsoup;
@@ -33,6 +36,7 @@ public final class GetHonbun extends AsyncTask<URL, Void, Document> {
         final URL url = urls[0];
         HttpURLConnection con = null;
         url1 = url.toString();
+        url1.replace("l50","");
         try {
             //httpコネクトの設定
             con = (HttpURLConnection) url.openConnection();
@@ -90,7 +94,6 @@ public final class GetHonbun extends AsyncTask<URL, Void, Document> {
         // MyAdapterを作成し、データを設定
         MyAdapter adapter = new MyAdapter(mainActivity);
         adapter.setList(PostsArray);
-
         // ListViewにadapterを設定する
         ListView listView = (ListView) mainActivity.findViewById(R.id.Posts);
         listView.setAdapter(adapter);
