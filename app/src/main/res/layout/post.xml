@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:layoutDescription="@xml/post_scene">
 
+    app:layoutDescription="@xml/post_scene">
     <androidx.constraintlayout.helper.widget.Flow
         android:id="@+id/flow"
         android:layout_width="0dp"
@@ -52,6 +52,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="ここに本文を入れる"
+        android:autoLink="all"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/flow" />

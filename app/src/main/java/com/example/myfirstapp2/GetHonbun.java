@@ -1,6 +1,7 @@
 package com.example.myfirstapp2;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.AsyncTask;
 import android.view.View;
 import android.widget.AdapterView;

@@ -83,7 +83,8 @@ public class MutableLinkMovementMethod extends LinkMovementMethod {
                 Selection.removeSelection(buffer);
             }
         }
-
-        return super.onTouchEvent(widget, buffer, event);
+        return false;
+        //return super.onTouchEvent(widget, buffer, event);
     }
+
 }

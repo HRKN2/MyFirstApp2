@@ -25,7 +25,6 @@ public class titles extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.textView);
 
         //以下でリストにスレッドタイトル一覧を設定する
-        //また、リストごとにクリックしたら次のアクティビティに飛ぶようにする
         try {
             new GetThreadTitles(this).execute(new URL(url1));
         } catch (MalformedURLException e) {
